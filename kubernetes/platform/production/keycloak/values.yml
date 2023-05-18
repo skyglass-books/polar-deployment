@@ -5,7 +5,7 @@ image:
   tag: 19.0.3-debian-11-r2
 extraEnvVars:
   - name: JAVA_OPTS_APPEND
-    value: "-Dkeycloak.import=/opt/keycloak/data/import/realm-config.json"
+    value: "-Djgroups.dns.query=keycloak-headless -Dkeycloak.import=/opt/keycloak/data/import/realm-config.json"
   - name: KC_HTTP_ENABLED
     value: "true"
   - name: KC_HOSTNAME_STRICT_HTTPS
