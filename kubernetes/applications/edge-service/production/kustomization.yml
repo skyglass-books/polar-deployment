@@ -2,25 +2,25 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - github.com/skyglass-books/edge-service/k8s?ref=master
+- github.com/skyglass-books/edge-service/k8s?ref=master
 
 patchesStrategicMerge:
-  - patch-env.yml
-  - patch-ingress.yml
-  - patch-resources.yml
-  - patch-volumes.yml
+- patch-env.yml
+- patch-ingress.yml
+- patch-resources.yml
+- patch-volumes.yml
 
 configMapGenerator:
-  - behavior: merge
-    files:
-      - application-prod.yml
-    name: edge-config
+- behavior: merge
+  files:
+  - application-prod.yml
+  name: edge-config
 
 images:
-  - name: edge-service
-    newName: ghcr.io/skyglass-books/edge-service
-    newTag: latest
+- name: edge-service
+  newName: ghcr.io/skyglass-books/edge-service
+  newTag: 4d8fe1d1f3936254cda46606717f0e9240a15601
 
 replicas:
-  - count: 1
-    name: edge-service
+- count: 1
+  name: edge-service
