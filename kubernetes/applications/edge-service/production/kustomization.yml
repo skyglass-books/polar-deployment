@@ -19,7 +19,7 @@ configMapGenerator:
 images:
 - name: edge-service
   newName: ghcr.io/skyglass-books/edge-service
-  newTag: b7ab6fb46d3e5f403c0578cbaf15c717c6e516f4
+  newTag: 0f43ca904d43cac8c50b716e86482d197db4e476
 
 replicas:
 - count: 1
