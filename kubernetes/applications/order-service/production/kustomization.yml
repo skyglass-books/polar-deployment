@@ -18,7 +18,7 @@ configMapGenerator:
 images:
 - name: order-service
   newName: ghcr.io/skyglass-books/order-service
-  newTag: 80a076cf50802a28c27e6eb4772904ed4ab1bbe7
+  newTag: 2829fbb982f598e826fac641f38ba1607e48fcb5
 
 replicas:
 - count: 1
