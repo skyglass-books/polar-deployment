@@ -18,7 +18,7 @@ configMapGenerator:
 images:
 - name: catalog-service
   newName: ghcr.io/skyglass-books/catalog-service
-  newTag: 5a84d61944bf1d7a6356f89df3f595d0b7d689a1
+  newTag: 69cb65918450f293a752f0f4a087ce49a8e1ad54
 
 replicas:
 - count: 2
